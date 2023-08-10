@@ -8,11 +8,13 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		
-		features="src/test/resources/FeatureFile-Folder/dataTableWithoutHeader.feature",
+		features="src/test/resources/FeatureFile-Folder/Login.feature",
 
-		glue= {"Step_Definitions"}
+		glue= {"Step_Definitions"},
 		
-		//monochrome = true,
+		dryRun=true,
+	
+		monochrome = true
 		
 		//plugin = {"pretty", "html:target/HTMLReports/report.html"},
 		//plugin = {"pretty" , "html:target/HTMLReports/report.html" , 
@@ -25,3 +27,13 @@ import io.cucumber.junit.CucumberOptions;
 public class RunnerClass {
 
 }
+// Cucumber-Options
+/*
+features,
+glue,
+dryRun,
+strict,
+tags,
+monochrome,
+plugin
+*/
