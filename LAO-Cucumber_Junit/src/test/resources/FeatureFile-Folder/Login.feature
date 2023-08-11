@@ -2,8 +2,9 @@ Feature: Login featrure
 
   #@Test
   Scenario Outline: Login Scenario
-    Given enter user name <UserName>
-    When enter pwd <Pwd>
+    Given launch the browser
+    When enter user name <UserName>
+    And enter pwd <Pwd>
     Then click loginBtn
 
     Examples: 

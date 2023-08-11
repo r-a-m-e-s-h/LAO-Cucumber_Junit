@@ -8,25 +8,26 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		
-		features="src/test/resources/FeatureFile-Folder/Login.feature",
+		features="src/test/resources/FeatureFile-Folder",
 
-		glue= {"Step_Definitions"},
+		glue= {"Step_Definitions","hooks"},
 		
-		dryRun=true,
-	
-		monochrome = true
+		dryRun=false,
+					
+		monochrome = true,
 		
 		//plugin = {"pretty", "html:target/HTMLReports/report.html"},
 		//plugin = {"pretty" , "html:target/HTMLReports/report.html" , 
 				//"json:target/JSONReports/report.json" ,"junit:target/XMLReports/report.xml" }
 		
-		//tags = "@Test"
+		tags = "@BackGround-Practise"
 		
 		)
 
 public class RunnerClass {
 
 }
+
 // Cucumber-Options
 /*
 features,

@@ -15,8 +15,8 @@ public class loginPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//input[@name='username']")
-	WebElement uname;
+	@FindBy(name="username")
+	public static WebElement uname;
 	
 	@FindBy(xpath="//input[@name='password']")
 	WebElement pwd;
@@ -24,13 +24,13 @@ public class loginPage {
 	@FindBy(xpath="//button[text()=' Login ']")
 	WebElement loginBtn;
 	
-	public void EnterUserName(String name)
+	public void EnterUserName(String username)
 	{
-		uname.sendKeys(name);
+		uname.sendKeys(username);
 	}
-	public void EnterPassWord(String password)
+	public void EnterPassWord(String Passwd)
 	{
-		pwd.sendKeys(password);
+		pwd.sendKeys(Passwd);
 	}
 	public void ClickLoginBtn()
 	{
